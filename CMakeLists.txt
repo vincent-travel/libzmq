@@ -787,8 +787,8 @@ if (MSVC)
             PUBLIC_HEADER DESTINATION include
             COMPONENT SDK)
     if (NOT CMAKE_PDB_OUTPUT_DIRECTORY)
-      install (FILES ${CMAKE_CURRENT_BINARY_DIR}/bin/libzmq${MSVC_TOOLSET}-mt-gd-${ZMQ_VERSION_MAJOR}_${ZMQ_VERSION_MINOR}_${ZMQ_VERSION_PATCH}.pdb DESTINATION lib
-            COMPONENT SDK)
+#      install (FILES ${CMAKE_CURRENT_BINARY_DIR}/bin/libzmq${MSVC_TOOLSET}-mt-gd-${ZMQ_VERSION_MAJOR}_${ZMQ_VERSION_MINOR}_${ZMQ_VERSION_PATCH}.pdb DESTINATION lib
+#            COMPONENT SDK)
     endif ()
   else ()
     install (TARGETS libzmq
